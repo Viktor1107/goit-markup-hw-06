@@ -42,6 +42,7 @@ body{
 .header-container {
     display: flex;
     align-items: center;
+    margin: 0 auto;
 }
 .header-nav {
     display: flex;
@@ -271,7 +272,7 @@ body{
 
 /* --------section three------ */
 
-.section-three container {
+.section-three {
     padding-top: 120px;
     padding-bottom: 120px; 
     width: 1128px;
@@ -295,28 +296,15 @@ body{
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    /* gap: 24px; */
-    /* height: auto;  */
-    /* flex-direction: row; */
-    /* margin-left: 156px;
-    margin-right: 156px;
-    margin-top: 72px; */
+
 }
-.three-lists-first {
+.three-lists-wrap {
     gap: 24px;
     height: auto;
     display: flex;
     width: 1128px;
     height: 420px;
     margin-bottom: 48px;
-}
-.three-lists-second {
-    display: flex;
-    gap: 24px;
-    height: auto;
-    width: 1128px;
-    height: 420px;
-    margin-bottom: 120px;
 }
 .three-list {
     width: calc((100% - 48px) / 3);
@@ -325,6 +313,14 @@ body{
     height: 420px;
     background: #fff;
 }
+/* .three-lists-second {
+    display: flex;
+    gap: 24px;
+    height: auto;
+    width: 1128px;
+    height: 420px;
+    margin-bottom: 120px; */
+
 .three-img {
     width: 360px;
     height: 300px;
@@ -360,7 +356,7 @@ body{
 /* ----------footer---------- */
 
 .footer {
-    padding: 100px 0;
+    padding: 100px 0 100px;
     display: flex;
     width: 1440px;
     height: 312px;
