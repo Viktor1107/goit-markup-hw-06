@@ -29,61 +29,49 @@ body{
     color: #434455;
 }
 .container {
-    width: 1440px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 }
 
 /* -------header-------- */
-.header-container container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .header {
-    border: 1px solid #000;
-    width: 1440px;
-    height: 72px;
-    background-color: #fff;
+    border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    justify-content: space-between;
     align-items: center;
 }
-
-.header-logo {font-family: "Raleway", sans-serif;
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    font-family: "Raleway", sans-serif;
     font-weight:700;
     font-size:18px;
     line-height:1.17;
     letter-spacing:0.03em;
     text-transform:uppercase;
     color:#4d5ae5;
-    margin-left: 156px;
+    margin-right: 76px;
 }
 .header-logo-part {
     color:#2e2f42;
-}
-.header-nav {
-    display: flex;
-    gap: 40px;
 }
 .header-menu-list {
     display: flex;
     gap: 40px;
 }
 .header-menu-link{
-    flex-direction: row;
     font-weight:500;
     font-size:16px;
     line-height:1.5;
     letter-spacing:0.02em;
     color: #2e2f42;
-    padding-top: 24px;
-    padding-bottom: 10px;
-    display: inline;
+    padding: 24px 0;
+    display: block;
 }
 .header-menu-link:hover {
     color:#404bbf;}
@@ -94,24 +82,20 @@ body{
 .header-menu-link:active {
     color:#4d5ae5;
 }
+.address {
+    font-style: normal;
+    margin-left: auto;
+}
 .contact-details {
     display: flex;
     gap: 40px;
-    margin-right: 156px;
-    margin-bottom: 24px;
-    padding-top: 24px;
-    padding-right: 24px;
-    padding-bottom: 10px;
 }
 .contact-item{
-    flex-direction: row;
-    font-weight: 400;
     font-size: 16px;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-
 }
 .contact-item:hover {
     color: #404bbf 
@@ -125,22 +109,19 @@ body{
 } */
 /* -------section business */
 .business {
-    padding-top: 188px;
-    padding-left: 472px;
-    padding-right: 472px;
-    padding-bottom: 292px;
+    padding: 188px 0;
     width: 1440px;
     height: 600px;
     background: #2e2f42;
 }
 .business-title {
+    max-width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    max-width: 496px;
     margin: 0 auto;
     margin-bottom: 48px;
 }
@@ -152,11 +133,13 @@ body{
     letter-spacing: 0.04em;
     color: #fff;
     background: #4d5ae5;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     display: block; 
     border-radius: 4px;
+    border: none;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .business-button:hover { 
@@ -176,10 +159,7 @@ body{
 .first {
     width: 1128px;
     height: 104px;
-    margin-top: 120px;
-    margin-bottom: 120px;
-    margin-left: 156px;
-    margin-right: 156px;
+    padding: 120px 0;
 }
 .visually-hidden {
     position: absolute;
@@ -199,8 +179,7 @@ body{
     gap: 24px;
 }
 .first-item {
-    flex-direction: column;
-    
+    width: calc((100% - 72px) / 4);
 }
 .first-heading {
     font-weight: 500;
@@ -221,11 +200,12 @@ body{
 /* -------section second--------- */
 
 .second {
-    display: block;
+    padding: 120px 0;
+    /* display: block;
     width: 1440px;
     height: 732px;
     margin-bottom: 120px;
-    background-color: #F4F4FD;
+    background-color: #F4F4FD; */
 }
 .second-subject {
     display: flex;
@@ -254,13 +234,16 @@ body{
     background-color:#FFFFFF;
 }
 .second-list{
+    width: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
-    width: 264px;
+    /* width: 264px; */
     height: 380px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    background: #fff;
-    
+    background: #fff; 
+}
+.second-list-block {
+    padding: 32px 0;
 }
 .second-heading {
     font-weight: 500;
@@ -289,9 +272,11 @@ body{
 /* --------section three------ */
 
 .section-three container {
+    padding-top: 120px;
+    padding-bottom: 120px; 
     width: 1128px;
     height: 1000px;
-    margin-top: 120px;
+    /* margin-top: 120px; */
 
 }
 .three-subject {
@@ -303,16 +288,19 @@ body{
     text-transform: capitalize;
     color: #2e2f42;
     margin-bottom: 72px;
-    margin-top: 120px;
+    /* margin-top: 120px; */
 }
 .three-lists {
-    display: inline-block;
-    gap: 24px;
-    height: auto; 
-    flex-direction: row;
-    margin-left: 156px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    /* gap: 24px; */
+    /* height: auto;  */
+    /* flex-direction: row; */
+    /* margin-left: 156px;
     margin-right: 156px;
-    margin-top: 72px;
+    margin-top: 72px; */
 }
 .three-lists-first {
     gap: 24px;
@@ -331,6 +319,7 @@ body{
     margin-bottom: 120px;
 }
 .three-list {
+    width: calc((100% - 48px) / 3);
     border: 1px solid #e7e9fc;
     width: 360px;
     height: 420px;
@@ -340,14 +329,20 @@ body{
     width: 360px;
     height: 300px;
 }
+.three-list-box{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none; 
+}
 .three-heading {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-top: 32px;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
     margin-left: 16px;
     margin-right: 226px;
 }
@@ -365,6 +360,7 @@ body{
 /* ----------footer---------- */
 
 .footer {
+    padding: 100px 0;
     display: flex;
     width: 1440px;
     height: 312px;
@@ -382,6 +378,8 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
     width: 115px;
     height: 24px;
     margin-top: 100px;
@@ -397,16 +395,25 @@ body{
     color: #f4f4fd;
 }
 .footer-text {
+    max-width: 264px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    width: 264px;
+    /* width: 264px;
     height: 72px;
     padding-top: 140px;
-    margin-top: 16px;
+    margin-top: 16px; */
 } 
 
-
+/* border: 1px solid #000; */
+    /* width: 1440px;
+    height: 72px;
+    background-color: #fff; */
+    /* display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    justify-content: space-between;
+    align-items: center; */
 
