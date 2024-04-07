@@ -239,6 +239,7 @@ body{
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
     color: #2e2f42;
 }
 .second-text {
@@ -328,6 +329,7 @@ body{
     text-transform: uppercase;
     color: #4d5ae5;
     display: inline-block;
+    margin-bottom: 16px;
 }
 .footer-logo-part {
     font-family:"Raleway", sans-serif;
