@@ -592,7 +592,6 @@ background-color: #31d0aa;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow:0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -701,8 +700,11 @@ background-color: #31d0aa;
     margin-bottom: 8px;
 }
 
-.modal-box .modal-textarea {
+.modal-box {
     margin-bottom: 16px;
+}
+.modal-textarea{
+
 }
 
 .textarea {
@@ -726,7 +728,7 @@ background-color: #31d0aa;
     border-color: #4D5AE5;
 }
 
-.modal-box .checkbox {
+.modal-box-privacy .checkbox {
     margin-bottom: 24px;
 }
 
