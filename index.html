@@ -28,6 +28,11 @@
                             <li><a href="tel:+110001111111" class="contact-item">+11 (000) 111-11-11</a></li>
                         </ul>
                     </address>
+                    <button type="button" class="open-menu-btn">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-btn"></use>
+                        </svg>
+                    </button>
             </div>
         </header>
     <main class="main">
@@ -82,14 +87,14 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section> 
         <!-- section 2 -->
             <section class="second">
                 <div class="container">
                     <h2 class="second-subject">Our Team</h2>
                     <ul class="second-lists">
                         <li class="second-list">
-                            <img src="./images/img1.jpg" width="264" alt="Mark Guerrero"/>
+                            <img srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x" src="./images/img1.jpg" width="264" alt="Mark Guerrero"/>
                             <div class="second-list-block">
                                 <h3 class="second-heading">Mark Guerrero</h3>
                                 <p class="second-text">Product Designer</p>
@@ -126,7 +131,7 @@
                             </div>
                         </li>
                         <li class="second-list">
-                            <img src="./images/img2.jpg" width="264" alt="Tom Ford"/>
+                            <img srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x" src="./images/img2.jpg" width="264" alt="Tom Ford"/>
                         <div class="second-list-block">
                             <h3 class="second-heading">Tom Ford</h3>
                                 <p class="second-text">Frontend Developer</p>
@@ -163,7 +168,7 @@
                         </div>
                         </li>
                         <li class="second-list">
-                            <img src="./images/img3.jpg" width="264" alt="Garcia"/>
+                            <img srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x" src="./images/img3.jpg" width="264" alt="Garcia"/>
                         <div class="second-list-block">
                             <h3 class="second-heading">Camila Garcia</h3>
                                 <p class="second-text">Marketing</p>
@@ -200,7 +205,7 @@
                         </div>
                         </li>
                         <li class="second-list">
-                            <img src="./images/img4.jpg" width="264" alt="Daniel Wilson"/>
+                            <img srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x" src="./images/img4.jpg" width="264" alt="Daniel Wilson"/>
                         <div class="second-list-block">
                             <h3 class="second-heading">Daniel Wilson</h3>
                                 <p class="second-text">UI Designer</p>
@@ -246,10 +251,15 @@
                         <ul class="three-lists">
                                 <li class="three-list">
                                     <div class="three-img-box">
+                                        <picture>
+                                            <source srcset="./images/img5.jpg 1x, ./images/img5-2x.jpg 2x" media="(min-width: 1200px)">
+                                            <source srcset="./images/img5-tab.jpg 1x, ./images/img5-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                            <source srcset="./images/img5-mob.jpg 1x, ./images/img5-mob-2x.jpg 2x" media="(min-width: 320px)">
+                                        </picture>
                                         <img src="./images/img5.jpg" width="360" alt="app" class="three-img"/>
                                         <p class="three-img-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                         Cloud Storage App</p>
-                                    </div>
+                                    </div> -->
                                     <div class="three-list-box">
                                             <h3 class="three-heading">Banking App</h3>
                                             <p class="three-text">App</p>
@@ -262,7 +272,7 @@
                                         Exotic Fruit Ecommerce App ·
                                         Cloud Storage App</p></div>
                                     <div class="three-list-box">
-                                        <h3 class="three-heading">Cashless Payment</h3>
+                                        <h3 class="three-heading">Cashless Payment</h3> -->
                                         <p class="three-text">Marketing</p>
                                     </div>
                                 </li>
@@ -272,7 +282,7 @@
                                     <p class="three-img-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                                         Exotic Fruit Ecommerce App ·
                                         Cloud Storage App</p>
-                                    </div>
+                                    </div> -->
                                     <div class="three-list-box">
                                         <h3 class="three-heading">Meditation App</h3>
                                         <p class="three-text">App</p>
@@ -317,7 +327,7 @@
                         </ul>
             </div>
             </section>
-    </main>
+    </main> --> -->
 <!-- footer -->
     <footer class="footer">
         <div class="footer-container container">
@@ -372,6 +382,7 @@
             </div>
         </div>
     </footer>
+    <!-- //---backdrop---// -->
     <div class="backdrop is-open">
         <div class="modal">
             <button type="button" class="modal-close-btn">
